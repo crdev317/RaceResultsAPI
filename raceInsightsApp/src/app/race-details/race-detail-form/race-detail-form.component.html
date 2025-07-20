@@ -1,0 +1,37 @@
+<form #form="ngForm" (submit)="onSubmit(form)" [class.submitted]="service.formSubmitted" novalidate autocomplete="off">
+  <input type="hidden" name="id" [value]="service.formData.id">
+  <div class="mb-3">
+    <label>Horse Name</label>
+    <input class="form-control form-control-lg" placeholder="Name of the Horse" #horseName="ngModel" name="horseName"
+      [(ngModel)]="service.formData.horseName" required>
+  </div>
+  <div class="mb-3">
+    <label>Jockey Name</label>
+    <input class="form-control form-control-lg" placeholder="Name of the Jockey" #jockeyName="ngModel" name="jockeyName"
+      [(ngModel)]="service.formData.jockeyName" required>
+  </div>
+  <div class="mb-3 col-6">
+      <label>Race Date</label>
+      <input class="form-control form-control-lg" placeholder="MM/YY" #raceDate="ngModel" name="raceDate"
+        [(ngModel)]="service.formData.raceDate" required minlength="5" maxlength="5">
+    </div>
+  <div class="row">
+    <div class="mb-3 col-6">
+      <label>Position</label>
+      <input class="form-control form-control-lg" placeholder="Position" #position="ngModel" name="position" 
+      [(ngModel)]="service.formData.position" required minlength="1" maxlength="99999">
+    </div>
+  <div class="mb-3">
+    <label>Notes</label>
+    <input class="form-control form-control-lg" placeholder="Notes" #notes="ngModel" name="notes"
+      [(ngModel)]="service.formData.notes" required>
+  </div>
+    
+  </div>
+  <div class="d-grid">
+    <button class="btn btn-lg btn-success" type="submit">
+      Submit
+    </button>
+  </div>
+
+</form>

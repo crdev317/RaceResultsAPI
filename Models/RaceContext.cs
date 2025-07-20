@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RaceResultsAPI.Models;
 
-namespace RaceResultsAPI.Data
+namespace RaceResultsAPI.Models
 {
     public class RaceContext : DbContext
     {

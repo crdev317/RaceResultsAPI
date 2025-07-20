@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using RaceResultsAPI.Data;
 using RaceResultsAPI.Models;
 
 namespace RaceResultsAPI.Controllers

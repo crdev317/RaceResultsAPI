@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using RaceResultsAPI.Data;
+using RaceResultsAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
