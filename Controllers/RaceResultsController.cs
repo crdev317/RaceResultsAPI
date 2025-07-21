@@ -75,7 +75,7 @@ namespace RaceResultsAPI.Controllers
         // POST: api/RaceResults
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<RaceResult>> PostRaceResult(RaceResult raceResult)
+        public async Task<ActionResult<RaceResult>> PostRaceResult([FromBody] RaceResult raceResult)
         {
             _context.RaceResults.Add(raceResult);
             await _context.SaveChangesAsync();
